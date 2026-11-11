@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Costa Dev | Soluções Digitais: sites, sistemas e identidade visual</title>
+<meta name="description" content="A Costa Dev cria sites, landing pages, sistemas e identidades visuais para empresas e empreendedores. Peça seu orçamento pelo WhatsApp.">
+<meta name="theme-color" content="#04070f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Costa Dev | Soluções Digitais">
+<meta property="og:description" content="Transformamos ideias em soluções digitais.">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+<style>
+:root{--bg:#04070f;--bg2:#08101f;--card:#0b1426;--line:#17264a;--blue:#2f7bff;--cyan:#38d5ff;--txt:#f2f6ff;--mut:#9aa8c7;
+--grad:linear-gradient(135deg,#2f7bff,#38d5ff);color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:84px;height:100%}
+body{margin:0;background:var(--bg);color:var(--txt);font:400 1rem/1.65 "DM Sans",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:Sora,sans-serif;line-height:1.1;margin:0;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
+section{padding:88px 0;position:relative}
+.lead{color:var(--mut);max-width:60ch}
+h2{font-size:clamp(1.8rem,4.4vw,2.9rem);font-weight:700}
+.sec-head{margin-bottom:44px;display:grid;gap:14px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:12px;font-weight:700;border:1px solid var(--line);cursor:pointer;font:700 .95rem "DM Sans";color:var(--txt);background:transparent;transition:transform .25s,box-shadow .25s,border-color .25s}
+.btn:hover{transform:translateY(-2px);border-color:var(--blue)}
+.btn.pri{background:var(--grad);border:0;color:#021022;box-shadow:0 8px 30px -8px #2f7bffaa}
+.btn.pri:hover{box-shadow:0 12px 40px -6px #38d5ffcc}
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+header.s{background:#04070fd9;backdrop-filter:blur(14px);border-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo svg{width:34px;height:34px}
+.logo b{font:800 1.1rem Sora;letter-spacing:.12em;display:block;line-height:1}
+.logo small{color:var(--mut);font-size:.72rem;display:block;margin-top:4px}
+nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+nav a{color:var(--mut);font-weight:500;transition:color .2s}
+nav a:hover{color:var(--txt)}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:10px;color:var(--txt);width:44px;height:44px;cursor:pointer}
+@media(max-width:900px){.burger{display:grid;place-items:center}
+nav{position:fixed;inset:72px 0 auto 0;background:var(--bg2);border-bottom:1px solid var(--line);padding:18px 20px 26px;transform:translateY(-130%);transition:transform .35s;visibility:hidden}
+nav.o{transform:none;visibility:visible}
+nav ul{flex-direction:column;gap:6px}nav a{display:block;padding:12px 0;font-size:1.1rem}
+.nav>.btn{display:none}}
+/* hero */
+.hero{min-height:100svh;display:flex;align-items:center;padding:130px 0 70px;overflow:hidden;background:radial-gradient(900px 500px at 78% 30%,#1a4bd655,transparent 60%),radial-gradient(600px 400px at 5% 90%,#0b3a8a44,transparent 60%)}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(#17264a55 1px,transparent 1px),linear-gradient(90deg,#17264a55 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse at 60% 40%,#000 10%,transparent 70%)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;position:relative}
+.hero h1{font-size:clamp(2.5rem,6.4vw,4.6rem);font-weight:800}
+.hero h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--mut);font-size:1.12rem;max-width:52ch;margin:24px 0 34px}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px}
+.win{background:linear-gradient(160deg,#0d1a33,#070d1b);border:1px solid var(--line);border-radius:18px;box-shadow:0 40px 90px -30px #2f7bff77,inset 0 1px 0 #ffffff12;transform:perspective(1100px) rotateY(-9deg) rotateX(4deg);animation:fl 7s ease-in-out infinite}
+@keyframes fl{50%{transform:perspective(1100px) rotateY(-6deg) rotateX(2deg) translateY(-10px)}}
+.dots{display:flex;gap:7px;padding:14px 16px;border-bottom:1px solid var(--line)}
+.dots i{width:10px;height:10px;border-radius:50%;background:#22345f}
+.win pre{margin:0;padding:20px;font:400 .84rem/1.8 "JetBrains Mono",monospace;color:#b9c8ea;overflow:hidden}
+.win pre span{display:block;opacity:0;animation:ty .5s forwards}
+@keyframes ty{to{opacity:1}}
+.k{color:#38d5ff}.s{color:#7fb0ff}.c{color:#4c5f8c}
+.chip{position:absolute;display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;background:#0b1426e6;border:1px solid var(--line);font-size:.82rem;font-weight:700;backdrop-filter:blur(8px);animation:fl2 6s ease-in-out infinite}
+.chip i{color:var(--cyan);width:16px;height:16px}
+@keyframes fl2{50%{transform:translateY(-8px)}}
+.visual{position:relative}
+.visual .chip:nth-child(2){left:-24px;bottom:12%}.visual .chip:nth-child(3){right:-8px;top:-18px;animation-delay:-2s}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr}.win{transform:none;animation:none}.visual .chip:nth-child(2){left:8px}}
+/* cards */
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:linear-gradient(180deg,var(--card),#070d1b);border:1px solid var(--line);border-radius:18px;padding:28px;transition:transform .3s,border-color .3s,box-shadow .3s}
+.card:hover{transform:translateY(-4px);border-color:#2f7bff88;box-shadow:0 20px 50px -25px #2f7bff}
+.ic{width:48px;height:48px;border-radius:13px;display:grid;place-items:center;background:#2f7bff1f;border:1px solid #2f7bff55;color:var(--cyan);margin-bottom:18px}
+.card h3{font-size:1.15rem;margin-bottom:8px}.card p{margin:0;color:var(--mut);font-size:.95rem}
+.hl{margin-top:40px;padding:30px;border-radius:20px;border:1px solid #2f7bff66;background:linear-gradient(120deg,#12307a66,#0b142600);display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
+.hl p{margin:0;font:700 clamp(1.15rem,2.6vw,1.6rem) Sora}
+/* about */
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about p{color:var(--mut)}
+.stack{display:grid;gap:14px}
+.bar{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.bar div{display:flex;justify-content:space-between;font-weight:700;margin-bottom:10px;font-size:.92rem}
+.bar em{display:block;height:6px;border-radius:9px;background:#14203c;overflow:hidden}
+.bar em::after{content:"";display:block;height:100%;width:var(--w);background:var(--grad);border-radius:9px;transform-origin:left;transform:scaleX(0);transition:transform 1.2s .2s cubic-bezier(.2,.7,.2,1)}
+.in .bar em::after{transform:none}
+@media(max-width:900px){.about .wrap{grid-template-columns:1fr}}
+/* portfolio */
+.tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+.tab{padding:9px 18px;border-radius:99px;border:1px solid var(--line);background:none;color:var(--mut);cursor:pointer;font:500 .9rem "DM Sans";transition:.2s}
+.tab[aria-pressed=true]{background:var(--grad);color:#021022;border-color:transparent;font-weight:700}
+.proj{padding:0;overflow:hidden}
+.cover{aspect-ratio:16/10;position:relative;display:grid;place-items:center;background:var(--g);overflow:hidden}
+.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cover svg{width:44%;opacity:.9;color:#ffffffcc}
+.badge{position:absolute;top:12px;left:12px;font-size:.72rem;padding:4px 10px;border-radius:99px;background:#04070fcc;border:1px solid var(--line);color:var(--mut)}
+.proj .b{padding:22px 24px 26px}.proj small{color:var(--cyan);font-weight:700}
+.proj h3{margin:6px 0}
+/* diff */
+.diff .card{display:flex;gap:16px;align-items:flex-start;padding:22px}.diff .ic{margin:0;flex:none}
+/* cta */
+.cta{text-align:center}
+.cta .box{border:1px solid #2f7bff77;border-radius:28px;padding:70px 24px;background:radial-gradient(600px 300px at 50% 0,#2f7bff55,transparent 70%),var(--bg2);position:relative;overflow:hidden}
+.cta .lead{margin:18px auto 32px}
+/* contact */
+.contact .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px}
+.info{display:grid;gap:14px;align-content:start}
+.info a,.info div{display:flex;gap:14px;align-items:center;color:var(--mut)}
+.info i{color:var(--cyan)}
+form{display:grid;gap:16px;grid-template-columns:1fr 1fr}
+.f{display:grid;gap:6px}.f.w{grid-column:1/-1}
+label{font-size:.85rem;font-weight:700}
+input,select,textarea{width:100%;padding:14px;border-radius:12px;border:1px solid var(--line);background:#060c19;color:var(--txt);font:inherit;transition:border-color .2s,box-shadow .2s}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--blue);box-shadow:0 0 0 3px #2f7bff33}
+.f.err input,.f.err select,.f.err textarea{border-color:#ff5d73}
+.msg{color:#ff8a9a;font-size:.8rem;min-height:1em}
+.ok{grid-column:1/-1;padding:14px;border-radius:12px;background:#0f3a2a;border:1px solid #1f7a55;display:none}
+.actions{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:12px}
+@media(max-width:900px){.contact .wrap{grid-template-columns:1fr}form{grid-template-columns:1fr}}
+footer{border-top:1px solid var(--line);padding:56px 0 30px;background:var(--bg2)}
+footer .g{display:grid;gap:34px;grid-template-columns:1.4fr 1fr 1fr 1fr}
+footer h3{font-size:.95rem;margin-bottom:14px}footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;color:var(--mut);font-size:.92rem}
+footer a:hover{color:var(--txt)}
+.copy{margin-top:40px;padding-top:22px;border-top:1px solid var(--line);color:var(--mut);font-size:.85rem}
+@media(max-width:900px){footer .g{grid-template-columns:1fr 1fr}}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:40;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#04200f;box-shadow:0 10px 30px -6px #25d366aa;transition:transform .25s}
+.wa:hover{transform:scale(1.08)}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.win span{opacity:1!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header id="hd"><div class="wrap nav">
+<a class="logo" href="#inicio" aria-label="Costa Dev, início">
+<svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="11" fill="url(#lg)"/><path d="M16 14l-6 6 6 6M24 14l6 6-6 6" stroke="#021022" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="lg" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#2f7bff"/><stop offset="1" stop-color="#38d5ff"/></linearGradient></defs></svg>
+<span><b data-c="name"></b><small data-c="tagline"></small></span></a>
+<nav id="nv" aria-label="Principal"><ul>
+<li><a href="#inicio">Início</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre Nós</a></li><li><a href="#contato">Contato</a></li></ul></nav>
+<a class="btn pri" href="#contato">Solicitar orçamento</a>
+<button class="burger" id="bg" aria-label="Abrir menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+</div></header>
+
+<main>
+<section class="hero" id="inicio"><div class="wrap">
+<div>
+<h1>Transformamos ideias em <span>soluções digitais.</span></h1>
+<p>Desenvolvemos experiências digitais que fortalecem marcas, impulsionam negócios e conectam empresas ao futuro.</p>
+<div class="cta-row"><a class="btn pri" href="#servicos">Conheça nossos serviços <i data-lucide="arrow-right"></i></a><a class="btn" href="#contato">Solicite um orçamento</a></div>
+</div>
+<div class="visual">
+<div class="win" aria-hidden="true"><div class="dots"><i></i><i></i><i></i></div>
+<pre><span style="animation-delay:.3s"><b class="c">// costa-dev.config</b></span><span style="animation-delay:.8s"><b class="k">const</b> projeto = {</span><span style="animation-delay:1.3s">  cliente: <b class="s">"sua empresa"</b>,</span><span style="animation-delay:1.8s">  entrega: [<b class="s">"site"</b>, <b class="s">"sistema"</b>, <b class="s">"marca"</b>],</span><span style="animation-delay:2.3s">  design: <b class="s">"sob medida"</b>,</span><span style="animation-delay:2.8s">  resultado: <b class="s">"crescimento"</b></span><span style="animation-delay:3.3s">};</span><span style="animation-delay:3.8s"><b class="k">await</b> costaDev.<b class="k">desenvolver</b>(projeto);</span></pre></div>
+<div class="chip"><i data-lucide="smartphone"></i>100% responsivo</div>
+<div class="chip"><i data-lucide="zap"></i>Rápido e otimizado</div>
+</div>
+</div></section>
+
+<section id="servicos"><div class="wrap">
+<div class="sec-head rv"><h2>Serviços sob medida para o seu negócio</h2><p class="lead">Do primeiro rascunho ao produto no ar, cuidamos de cada etapa.</p></div>
+<div class="grid" id="sv"></div>
+<div class="hl rv"><p>Se sua empresa precisa de uma solução digital, nós desenvolvemos.</p><a class="btn pri" href="#contato">Falar com a Costa Dev</a></div>
+</div></section>
+
+<section class="about" id="sobre"><div class="wrap" id="ab">
+<div class="rv"><h2>Mais que tecnologia, soluções que impulsionam negócios.</h2>
+<p style="margin-top:22px">A Costa Dev nasceu com o propósito de transformar ideias em soluções digitais eficientes. Trabalhamos com desenvolvimento, criatividade e tecnologia para ajudar empresas e empreendedores a fortalecer sua presença no mercado, otimizar processos e alcançar novos resultados.</p>
+<p>Cada projeto é desenvolvido considerando as necessidades e os objetivos de cada cliente. Nosso compromisso é entregar soluções modernas, funcionais e personalizadas.</p></div>
+<div class="stack rv"><div class="bar"><div><span>Desenvolvimento</span></div><em style="--w:95%"></em></div><div class="bar"><div><span>Design e identidade visual</span></div><em style="--w:90%"></em></div><div class="bar"><div><span>Estratégia digital</span></div><em style="--w:85%"></em></div></div>
+</div></section>
+
+<section class="diff" id="diferenciais"><div class="wrap">
+<div class="sec-head rv"><h2>Por que escolher a Costa Dev</h2></div>
+<div class="grid" id="df"></div>
+</div></section>
+
+<section class="cta"><div class="wrap"><div class="box rv">
+<h2>Seu próximo projeto começa aqui.</h2>
+<p class="lead">Tem uma ideia, precisa modernizar sua empresa ou deseja desenvolver uma solução digital? Vamos tirar seu projeto do papel.</p>
+<a class="btn pri" data-wa href="#" target="_blank" rel="noopener"><i data-lucide="message-circle"></i>Falar com um especialista</a>
+</div></div></section>
+
+<section class="contact" id="contato"><div class="wrap">
+<div class="info rv"><h2>Vamos conversar</h2>
+<p class="lead">Conte sobre o seu projeto. Respondemos direto pelo WhatsApp.</p>
+<a class="btn pri" data-wa href="#" target="_blank" rel="noopener" style="justify-self:start"><i data-lucide="message-circle"></i>Chamar no WhatsApp</a>
+<a id="ig" href="#" target="_blank" rel="noopener"><i data-lucide="instagram"></i><span></span></a>
+<a id="em" href="#"><i data-lucide="mail"></i><span></span></a>
+<div><i data-lucide="clock"></i><span id="hr"></span></div>
+<div><i data-lucide="map-pin"></i><span id="lc"></span></div></div>
+<form id="fm" novalidate class="rv">
+<div class="f"><label for="n">Nome</label><input id="n" name="nome" autocomplete="name" required><span class="msg"></span></div>
+<div class="f"><label for="t">Telefone</label><input id="t" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(32) 99999-9999" required><span class="msg"></span></div>
+<div class="f w"><label for="e">E-mail</label><input id="e" name="email" type="email" autocomplete="email" required><span class="msg"></span></div>
+<div class="f w"><label for="s">Tipo de serviço</label><select id="s" name="servico" required><option value="">Selecione</option></select><span class="msg"></span></div>
+<div class="f w"><label for="d">Descrição do projeto</label><textarea id="d" name="descricao" rows="4" required minlength="10"></textarea><span class="msg"></span></div>
+<div class="ok" id="ok" role="status"></div>
+<div class="actions"><button class="btn pri" type="submit" data-m="wa"><i data-lucide="send"></i>Enviar pelo WhatsApp</button><button class="btn" type="submit" data-m="mail"><i data-lucide="mail"></i>Enviar por e-mail</button></div>
+</form></div></section>
+</main>
+
+<footer><div class="wrap"><div class="g">
+<div><a class="logo" href="#inicio"><span><b data-c="name"></b><small data-c="tagline"></small></span></a></div>
+<div><h3>Links rápidos</h3><ul><li><a href="#inicio">Início</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre Nós</a></li><li><a href="#contato">Contato</a></li></ul></div>
+<div><h3>Serviços</h3><ul id="fs"></ul></div>
+<div><h3>Redes sociais</h3><ul><li><a id="fi" href="#" target="_blank" rel="noopener">Instagram</a></li><li><a data-wa href="#" target="_blank" rel="noopener">WhatsApp</a></li></ul></div>
+</div><div class="copy">© 2026 Costa Dev. Todos os direitos reservados.</div></div></footer>
+<a class="wa" data-wa href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><i data-lucide="message-circle"></i></a>
+
+<script>
+/* ============ CONFIGURAÇÃO CENTRAL: edite só aqui ============ */
+const CONFIG={
+  name:"COSTA DEV", tagline:"Soluções Digitais",
+  whatsapp:"5532988980513",            // DDI+DDD+número, só dígitos
+  instagram:"_costadev",               // @ sem o arroba
+  email:"costadev374@gmail.com",
+  hours:"Seg a sex, 9h às 22h", location:"Juiz de Fora, MG",
+  services:[
+    {icon:"monitor",title:"Criação de Sites",text:"Sites institucionais, landing pages, páginas comerciais e sites personalizados, modernos, responsivos e otimizados."},
+    {icon:"database",title:"Desenvolvimento de Sistemas",text:"Sistemas personalizados, plataformas de gestão, automações e ferramentas desenvolvidas de acordo com a necessidade de cada cliente."},
+    {icon:"pen-tool",title:"Identidade Visual e Logotipos",text:"Criação de logotipos, identidade visual, materiais gráficos e fortalecimento da identidade das marcas."},
+    {icon:"layout-template",title:"Landing Pages",text:"Páginas estratégicas desenvolvidas para apresentar produtos, captar contatos e aumentar conversões."},
+    {icon:"puzzle",title:"Soluções Digitais Personalizadas",text:"Desenvolvimento de soluções sob medida para resolver problemas e facilitar processos empresariais."},
+    {icon:"trending-up",title:"Impulsionamento Digital",text:"Soluções para fortalecer a presença digital de empresas, melhorar seu posicionamento e ampliar suas oportunidades de negócio."},
+    {icon:"compass",title:"Consultoria e Tecnologia",text:"Orientação e desenvolvimento de projetos tecnológicos para empresas que desejam inovar e crescer."}],
+  categories:["Sites institucionais","Landing pages","Sistemas e plataformas","Logotipos e identidade visual","Projetos personalizados"],
+  /* image: URL ou data:URI da sua imagem. Vazio = capa gráfica automática. demo:false remove a etiqueta. */
+  portfolio:[
+    {title:"Site corporativo",cat:"Sites institucionais",text:"Estrutura de site institucional com páginas de serviços e contato.",image:"",demo:true,icon:"building-2"},
+    {title:"Página de captação",cat:"Landing pages",text:"Landing page focada em conversão, com formulário e chamada clara.",image:"",demo:true,icon:"target"},
+    {title:"Painel de gestão",cat:"Sistemas e plataformas",text:"Plataforma de gestão com painel, relatórios e cadastros.",image:"",demo:true,icon:"layout-dashboard"},
+    {title:"Marca e logotipo",cat:"Logotipos e identidade visual",text:"Logotipo, paleta e materiais de identidade visual.",image:"",demo:true,icon:"palette"},
+    {title:"Automação sob medida",cat:"Projetos personalizados",text:"Ferramenta personalizada para agilizar um processo da empresa.",image:"",demo:true,icon:"workflow"},
+    {title:"Loja de apresentação",cat:"Sites institucionais",text:"Vitrine digital de produtos com navegação simples.",image:"",demo:true,icon:"store"}],
+  differentials:[
+    {icon:"sliders-horizontal",t:"Soluções personalizadas",d:"Cada projeto nasce das suas necessidades."},
+    {icon:"headset",t:"Atendimento direto",d:"Você fala com quem desenvolve."},
+    {icon:"sparkles",t:"Design moderno e profissional",d:"Visual atual, com acabamento de agência."},
+    {icon:"cpu",t:"Tecnologia atualizada",d:"Ferramentas modernas, rápidas e seguras."},
+    {icon:"tablet-smartphone",t:"Projetos responsivos",d:"Perfeitos em celular, tablet e computador."},
+    {icon:"badge-check",t:"Compromisso com resultados",d:"Entregas pensadas para gerar negócio."}]
+};
+/* =============================================================== */
+const $=s=>document.querySelector(s),C=CONFIG;
+const wa=t=>`https://wa.me/${C.whatsapp}${t?'?text='+encodeURIComponent(t):''}`;
+document.querySelectorAll('[data-c]').forEach(e=>e.textContent=C[e.dataset.c]);
+document.querySelectorAll('[data-wa]').forEach(a=>a.href=wa('Olá, Costa Dev! Gostaria de pedir um orçamento.'));
+$('#ig').href=$('#fi').href='https://instagram.com/'+C.instagram;$('#ig span').textContent='@'+C.instagram;
+$('#em').href='mailto:'+C.email;$('#em span').textContent=C.email;$('#hr').textContent=C.hours;$('#lc').textContent=C.location;
+const ic=n=>`<i data-lucide="${n}"></i>`;
+$('#sv').innerHTML=C.services.map(s=>`<article class="card rv"><div class="ic">${ic(s.icon)}</div><h3>${s.title}</h3><p>${s.text}</p></article>`).join('');
+$('#df').innerHTML=C.differentials.map(s=>`<div class="card rv"><div class="ic">${ic(s.icon)}</div><div><h3>${s.t}</h3><p>${s.d}</p></div></div>`).join('');
+$('#fs').innerHTML=C.services.slice(0,5).map(s=>`<li>${s.title}</li>`).join('');
+$('#s').insertAdjacentHTML('beforeend',C.services.map(s=>`<option>${s.title}</option>`).join('')+'<option>Outro</option>');
+const hues=[[218,200],[225,195],[210,240],[200,225],[235,205],[215,190]];
+function draw(f){
+  $('#pj').innerHTML=C.portfolio.filter(p=>f==='Todos'||p.cat===f).map((p,i)=>{const h=hues[i%6];
+  return `<article class="card proj"><div class="cover" style="--g:linear-gradient(135deg,hsl(${h[0]} 80% 22%),hsl(${h[1]} 90% 45%))">${p.image?`<img src="${p.image}" alt="${p.title}" loading="lazy">`:ic(p.icon||'folder')}${p.demo?'<span class="badge">Projeto demonstrativo</span>':''}</div><div class="b"><small>${p.cat}</small><h3>${p.title}</h3><p>${p.text}</p></div></article>`}).join('');
+  lucide&&lucide.createIcons();
+}
+
+
+/* menu */
+const nv=$('#nv'),bg=$('#bg');
+bg.onclick=()=>{const o=nv.classList.toggle('o');bg.setAttribute('aria-expanded',o)};
+nv.onclick=e=>{if(e.target.tagName==='A'){nv.classList.remove('o');bg.setAttribute('aria-expanded',false)}};
+addEventListener('scroll',()=>$('#hd').classList.toggle('s',scrollY>20),{passive:true});
+/* revelar ao rolar */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+function obs(){document.querySelectorAll('.rv:not(.in)').forEach(e=>io.observe(e));document.querySelectorAll('#ab').forEach(e=>io.observe(e))}
+/* formulário: valida e envia por WhatsApp (principal) ou e-mail */
+const fm=$('#fm');let mode='wa';
+fm.querySelectorAll('button[type=submit]').forEach(b=>b.onclick=()=>mode=b.dataset.m);
+const rules={n:v=>v.trim().length>=3||'Informe seu nome completo.',t:v=>v.replace(/\D/g,'').length>=10||'Informe DDD e telefone válidos.',e:v=>/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)||'Informe um e-mail válido.',s:v=>!!v||'Escolha um tipo de serviço.',d:v=>v.trim().length>=10||'Descreva o projeto em pelo menos 10 caracteres.'};
+function check(id){const el=$('#'+id),r=rules[id](el.value),f=el.closest('.f');f.classList.toggle('err',r!==true);f.querySelector('.msg').textContent=r===true?'':r;return r===true}
+Object.keys(rules).forEach(id=>$('#'+id).addEventListener('blur',()=>check(id)));
+fm.onsubmit=e=>{e.preventDefault();const okAll=Object.keys(rules).map(check).every(Boolean);if(!okAll){fm.querySelector('.err input,.err select,.err textarea')?.focus();return}
+  const v=id=>$('#'+id).value.trim();
+  const txt=`Olá, Costa Dev! Gostaria de um orçamento.\n\nNome: ${v('n')}\nTelefone: ${v('t')}\nE-mail: ${v('e')}\nServiço: ${v('s')}\nProjeto: ${v('d')}`;
+  const ok=$('#ok');ok.style.display='block';
+  if(mode==='wa'){ok.textContent='Tudo certo! Abrindo o WhatsApp com sua mensagem pronta.';open(wa(txt),'_blank','noopener')}
+  else{ok.textContent='Tudo certo! Abrindo seu aplicativo de e-mail.';location.href=`mailto:${C.email}?subject=${encodeURIComponent('Orçamento: '+v('s'))}&body=${encodeURIComponent(txt)}`}
+  fm.reset()};
+obs();
+addEventListener('load',()=>{window.lucide&&lucide.createIcons()});
+</script>
+</body>
+</html>
